@@ -1,0 +1,130 @@
+/* Debugging */
+/* header {
+  border: 2px solid red !important;
+  background-color: rgba(255, 0, 0, 0.1) !important;
+}
+main {
+  border: 2px solid blue !important;
+  background-color: rgba(0, 0, 255, 0.1) !important;
+}
+header > div,
+main > div {
+  border: 2px dashed green !important;
+} */
+/* End of debugging */
+
+main {
+  padding-right: 40px; /* Creates space between main content and widgets */
+  padding-bottom: 40px; /* Space for footer */
+}
+
+/* Mobile size adjustment */
+@media (max-width: 768px) {
+  main {
+    padding-right: 0;
+  }
+}
+
+.widget-container {
+  width: 350px;
+  position: sticky;
+  top: 100px; /* Below header */
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+@media (max-width: 1024px) {
+  .widget-container {
+    width: 100%;
+    position: relative;
+    top: auto;
+    padding-left: 0;
+    margin-top: 40px;
+  }
+
+  .mx-auto.flex {
+    flex-direction: column;
+  }
+}
+
+.signup-widget {
+  order: 1;
+  width: 100%;
+  max-width: 300px;
+  flex-shrink: 1;
+}
+
+.work-widget {
+  order: 2;
+  width: 100%;
+  max-width: 300px;
+  flex-shrink: 1;
+}
+
+.skills-widget {
+  order: 3;
+  width: 100%;
+  max-width: 300px;
+  flex-shrink: 1;
+}
+
+css
+Copy
+/* Main layout structure */
+.content-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-content-container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* Articles section takes remaining space */
+.articles-container {
+  flex: 1;
+  min-width: 0; /* Prevent flex overflow */
+}
+
+/* Widgets column styling */
+.widgets-column {
+  width: 350px;
+  position: sticky;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .main-content-container {
+    flex-direction: column;
+  }
+
+  .widgets-column {
+    width: 100%;
+    position: static;
+    margin-top: 40px;
+  }
+}
+
+/* Optional: Add some visual separation */
+.widgets-column > * {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid rgba(128, 128, 128, 0.3);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.dark .widgets-column > * {
+  background: #1a1a1a;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}

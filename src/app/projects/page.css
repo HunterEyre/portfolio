@@ -1,0 +1,10 @@
+main {
+  padding-bottom: 40px;
+}
+
+.title-container {
+  width: 672px;
+  height: 248px;
+  max-width: 672px;
+  gap: 24px;
+}

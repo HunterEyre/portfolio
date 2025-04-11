@@ -1,0 +1,36 @@
+/* Footer Container */
+.footer {
+    border-top: 1px solid rgba(128, 128, 128, 0.3);
+    background-color: #ffffff; /* Default to light mode background */
+    color: #000000; /* Default to light mode text color */
+  }
+  
+  /* Dark Mode Styles */
+  .dark .footer {
+    background-color: #1a1a1a; /* Dark background for dark mode */
+    color: #ffffff; /* Light text color for dark mode */
+  }
+  
+  /* Footer Links */
+  .footer-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-link {
+    color: inherit; /* Inherit text color */
+    text-decoration: none;
+  }
+  
+  .footer-link:hover {
+    color: #9ca3af; /* Hover effect for the links */
+  }
+  
+  /* Footer Rights Text */
+  .footer-rights {
+    text-align: right;
+    font-size: 0.875rem; /* Small text for the rights */
+  }
+  

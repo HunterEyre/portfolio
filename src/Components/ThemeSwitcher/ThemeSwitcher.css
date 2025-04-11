@@ -1,0 +1,82 @@
+/* General container for theme switcher, positioned at the right */
+.theme-switcher {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; /* Aligning the button to the right */
+    align-items: center;
+    padding: 2px;
+    position: fixed; /* Fixed to the top-right of the screen */
+    top: 15px; /* Adjust the top distance as needed */
+    right: 10px; /* Adjust the right distance as needed */
+    z-index: 999; /* Ensure it appears above other elements */
+    width: 32px;
+    height: 32px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+  }
+  
+  /* Theme switcher button styles */
+  .theme-switcher-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 12px;
+    gap: 1px;
+    width: 36px;
+    height: 36px;
+    border-radius: 9999px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    position: center;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 6px -4px rgba(39, 39, 41, 0.05), 0px 10px 15px -3px rgba(39, 39, 41, 0.05);
+    transition: background-color 0.3s ease, border 0.3s ease;
+  }
+  /* Light Mode - Button is white */
+  .theme-switcher-button.light-mode {
+    background-color: white;
+    border: 1px solid #d4d4d8; /* Light gray border */
+  }
+  
+  /* Dark Mode - Button is dark */
+  .theme-switcher-button.dark-mode {
+    background-color: #27272a;
+    border: 1px solid #3f3f46;
+  }
+  
+  /* Icon inside theme switcher */
+  .theme-switcher-icon {
+    display: flex;
+    justify-content: center; /* Center the icon horizontally */
+    align-items: center; /* Center the icon vertically */
+    width: 24px;
+    height: 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    z-index: 1;
+  }
+  
+  /* Icon shape and background */
+  .moon-icon,
+  .sun-icon {
+    width: 18.75px;
+    height: 18.75px;
+    border: 1.5px solid #71717a;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Add different icon representations here (for moon and sun) */
+  .moon-icon {
+    background-color: #3f3f46; /* Example dark background */
+  }
+  
+  .sun-icon {
+    background-color: #f4f4f5; /* Example light background for sun */
+  }
+  

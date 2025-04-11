@@ -1,0 +1,152 @@
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* Keeps the Navbar aligned to the left */
+    align-items: flex-end;
+    padding: 24px 96px 8px;
+    width: 100%;
+    max-width: 1280px;
+    height: 72px;
+    background: #ffffff;
+    transition: background-color 0.3s, color 0.3s; /* Add transition for color and background */
+  }
+  
+  /* Dark mode navbar */
+  .dark .navbar {
+    background: #333333; /* Dark background for the navbar */
+    color: #ffffff; /* White text color */
+  }
+  
+  /* Navigation List */
+  .navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centers the nav options */
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Allow the ul to take up full width */
+  }
+  
+  /* Navigation Links */
+  .navbar li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 4px;
+    border-radius: 9999px;
+  }
+  
+  /* Navigation Links */
+  .navbar .link {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #272729; /* Light text color in default mode */
+    padding: 8px 12px;
+    border-radius: 9999px;
+    transition: background 0.3s ease-in-out, color 0.3s; /* Transition for color change */
+  }
+  
+  /* Dark mode text color for links */
+  .dark .navbar .link {
+    color: #ffffff; /* White text for links in dark mode */
+  }
+  
+  /* Navigation Links Hover */
+  .navbar .link:hover {
+    background: rgba(23, 23, 26, 0.05);
+  }
+  
+  /* Dark mode hover style for links */
+  .dark .navbar .link:hover {
+    background: rgba(255, 255, 255, 0.1); /* Light background on hover in dark mode */
+  }
+  
+  /* Active Link Style */
+  .navbar .link.active {
+    color: #14b8a6;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(23, 23, 26, 0.05);
+    box-shadow: 0px 4px 6px -4px rgba(39, 39, 41, 0.05), 0px 10px 15px -3px rgba(39, 39, 41, 0.05);
+  }
+  
+  /* Dark mode active link */
+  .dark .navbar .link.active {
+    color: #14b8a6;
+    background: rgba(23, 23, 26, 0.9); /* Darker background for active links in dark mode */
+  }
+  
+  /* Theme Switcher (Ensure this stays unchanged) */
+  .theme-switcher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 40px;
+    border-radius: 9999px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 4px 6px -4px rgba(39, 39, 41, 0.05), 0px 10px 15px -3px rgba(39, 39, 41, 0.05);
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  /* Dark mode theme switcher */
+  .dark .theme-switcher {
+    background: rgba(39, 39, 42, 0.9); /* Dark background for the theme switcher */
+  }
+  
+  .theme-switcher:hover {
+    background: rgba(23, 23, 26, 0.1);
+  }
+  
+  /* Dark mode hover effect for theme switcher */
+  .dark .theme-switcher:hover {
+    background: rgba(255, 255, 255, 0.1); /* Light hover effect for the theme switcher */
+  }
+  /* Outer nav container - centers the whole bubble */
+  .navbar-outer {
+    display: flex;
+    justify-content: center;
+    padding-top: 24px;
+    padding-bottom: 8px;
+    width: 100%;
+  }
+  
+  /* Inner bubble styling */
+  .navbar-bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 32px;
+    border-radius: 9999px;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 4px 6px -4px rgba(39, 39, 41, 0.05), 0px 10px 15px -3px rgba(39, 39, 41, 0.1);
+    backdrop-filter: blur(10px);
+  }
+  
+  /* Dark mode bubble */
+  .dark .navbar-bubble {
+    background: rgba(39, 39, 42, 0.9);
+  }
+  
+  /* Nav links inside bubble */
+  .navbar-links {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar-links a:hover {
+    color: #14b8a6;
+  }
+  
